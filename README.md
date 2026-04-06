@@ -16,7 +16,7 @@ Data Structures & Algorithms
 
 ![Progress](https://img.shields.io/badge/Status-Active%20Learning-brightgreen?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-C%2B%2B%20-blue?style=flat-square)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-Growing-orange?style=flat-square)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-8-orange?style=flat-square)
 
 </div>
 
@@ -36,53 +36,84 @@ I'm solving problems progressively, starting from the fundamentals and working m
 ## 📁 Repository Structure
 
 ```
-DSA/
+Data-Structures-and-Algorithms/
 │
 ├── Arrays/
-│   ├── linear_search.cpp       ✅ Linear Search — O(n)
-│   ├── sorting/
-│   │   ├── bubble_sort.cpp     ✅ Bubble Sort — O(n²)
-│   │   ├── selection_sort.cpp  ✅ Selection Sort — O(n²)
-│   │   └── ...                 🔄 More coming...
-│   └── ...
+│   │
+│   ├── Searching/
+│   │   ├── Linear Search/
+│   │   │   ├── Linear_Search.cpp        ✅ Linear Search — O(n)
+│   │   │   └── README.md
+│   │   ├── Binary Search/
+│   │   │   ├── Binary_Search.cpp        ✅ Binary Search — O(log n)
+│   │   │   └── README.md
+│   │   ├── 2D Linear Search/
+│   │   │   ├── 2D_Linear_Search.cpp     ✅ 2D Linear Search — O(n×m)
+│   │   │   └── README.md
+│   │   └── 2D Binary Search/
+│   │       ├── 2D_Binary_Search.cpp     ✅ 2D Binary Search — O(log(n×m))
+│   │       └── README.md
+│   │
+│   └── Sorting/
+│       ├── Bubble Sort/
+│       │   ├── Bubble_Sort.cpp          ✅ Bubble Sort — O(n²)
+│       │   └── README.md
+│       ├── Selection Sort/
+│       │   ├── Selection_Sort.cpp       ✅ Selection Sort — O(n²)
+│       │   └── README.md
+│       └── Insertion Sort/
+│           ├── Insertion_Sort.cpp       ✅ Insertion Sort — O(n²)
+│           └── README.md
 │
-├── (Coming Soon)
-│   ├── Linked Lists/
-│   ├── Stacks & Queues/
-│   ├── Trees/
-│   ├── Graphs/
-│   ├── Dynamic Programming/
-│   └── ...
+├── Strings/
+│   └── Palindrome/
+│       ├── Palindrome.cpp               ✅ Palindrome Checker — O(n)
+│       └── README.md
+│
+└── (Coming Soon)
+    ├── Linked Lists/
+    ├── Stacks & Queues/
+    ├── Trees/
+    ├── Graphs/
+    └── Dynamic Programming/
 ```
 
 ---
 
 ## ✅ Progress Tracker
 
-| Topic              | Status         | Problems Solved | Notes                        |
-|--------------------|----------------|-----------------|------------------------------|
-| **Arrays**         | 🔄 In Progress | Growing         | Linear Search, Sorting       |
-| Linked Lists       | ⏳ Upcoming    | —               | —                            |
-| Stacks & Queues    | ⏳ Upcoming    | —               | —                            |
-| Recursion          | ⏳ Upcoming    | —               | —                            |
-| Trees (BST, etc.)  | ⏳ Upcoming    | —               | —                            |
-| Graphs (BFS/DFS)   | ⏳ Upcoming    | —               | —                            |
-| Dynamic Programming| ⏳ Upcoming    | —               | —                            |
-| Sorting Algorithms | 🔄 In Progress | Growing         | Bubble, Selection, more...   |
-| Searching Algorithms| 🔄 In Progress | Growing         | Linear Search, more...       |
+| Topic                | Status          | Problems Solved | Notes                                          |
+|----------------------|-----------------|-----------------|------------------------------------------------|
+| **Arrays/Searching** | 🔄 In Progress  | 4               | Linear Search, Binary Search, 2D versions      |
+| **Arrays/Sorting**   | 🔄 In Progress  | 3               | Bubble, Selection, Insertion Sort              |
+| **Strings**          | 🔄 In Progress  | 1               | Palindrome Checker                             |
+| Linked Lists         | ⏳ Upcoming     | —               | —                                              |
+| Stacks & Queues      | ⏳ Upcoming     | —               | —                                              |
+| Recursion            | ⏳ Upcoming     | —               | —                                              |
+| Trees (BST, etc.)    | ⏳ Upcoming     | —               | —                                              |
+| Graphs (BFS/DFS)     | ⏳ Upcoming     | —               | —                                              |
+| Dynamic Programming  | ⏳ Upcoming     | —               | —                                              |
 
 ---
 
 ## 🗂️ Topics Covered So Far
 
-### 📦 Arrays
-The foundation of DSA. Arrays are contiguous blocks of memory — understanding them deeply is essential before moving to complex structures.
+### 📦 Arrays — Searching 🔄 In Progress
+- ✅ **Linear Search** — Traverse array element by element. `O(n)` time, `O(1)` space.
+- ✅ **Binary Search** — Divide and conquer on sorted array. `O(log n)` time, `O(1)` space.
+- ✅ **2D Linear Search** — Row-by-row traversal on matrix. `O(n×m)` time, `O(1)` space.
+- ✅ **2D Binary Search** — Flat index binary search on sorted matrix. `O(log(n×m))` time, `O(1)` space.
+- 🔄 More searching techniques coming...
 
-- **Linear Search** — Traversing an array to find an element. `O(n)` time, `O(1)` space.
-- **Sorting** — Rearranging elements in a defined order (ascending/descending).
-  - Bubble Sort
-  - Selection Sort
-  - *(More being added)*
+### 📦 Arrays — Sorting 🔄 In Progress
+- ✅ **Bubble Sort** — Adjacent swaps with early exit optimization. `O(n²)` worst, `O(n)` best.
+- ✅ **Selection Sort** — Find minimum and place it. `O(n²)` time, minimum swaps.
+- ✅ **Insertion Sort** — Build sorted portion one element at a time. `O(n²)` worst, `O(n)` best.
+- 🔄 Merge Sort, Quick Sort coming...
+
+### 🔤 Strings 🔄 In Progress
+- ✅ **Palindrome Checker** — Two-pointer technique with case-insensitive comparison. `O(n)` time, `O(1)` space.
+- 🔄 More string problems coming...
 
 ---
 
@@ -92,6 +123,8 @@ The foundation of DSA. Arrays are contiguous blocks of memory — understanding 
 - ✅ Space Complexity Awareness
 - ✅ Writing clean, readable code with comments
 - ✅ Dry-running test cases manually
+- ✅ Two-pointer technique
+- ✅ Flat index mapping for 2D arrays
 - 🔄 Identifying patterns across problems
 - 🔄 Optimizing brute-force solutions
 
@@ -100,8 +133,8 @@ The foundation of DSA. Arrays are contiguous blocks of memory — understanding 
 ## 🗺️ Learning Roadmap
 
 ```
-Phase 1 — Foundations (Current)
-  └── Arrays → Searching → Sorting
+Phase 1 — Foundations 🔄 (Current)
+  └── Arrays → Searching → Sorting → Strings
 
 Phase 2 — Linear Data Structures
   └── Linked Lists → Stacks → Queues
